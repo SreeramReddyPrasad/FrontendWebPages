@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+nav {
+    background-color: #ed6262;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family:"Calibri", sans-serif;
+}
+
+#navimg {
+    width: 2rem;
+    margin-left: auto; 
+}
+
+/* Main content styling */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr; 
+    background-color: #f9ea97;
+    background-image: linear-gradient(90deg, #f6f498 0%, #d87bd4 100%);
+}
+
+#mainImg {
+    height: 100%; 
+    overflow: hidden;
+    width: 50vw;
+    float: right;
+}
+
+.heading{
+    margin-top: 4rem;
+    letter-spacing: .5rem;
+}
+p{
+    margin: 3.5rem auto;
+}
+.item{
+    padding: 3rem;
+}
+.button {
+    width: 100%; 
+    background-color:  #ed6262 ;
+    border: none;
+    width: 12vw;
+    height: 7vh;
+    color: white;
+    
+}
+
+.items{
+    grid-template-columns: 1fr;
+    margin-left: 4rem;
+}
+.img{
+    width: 19vw;
+    height: 32vh;
+
+}
+.img2{
+    width: 18vw;
+    height: 64vh; 
+    margin-left: -3rem;
+
+}
+h1{
+    letter-spacing: .5rem;
+    margin: 1rem auto;
+}
+.box{
+    display: block;
+    background-color:#ed6262;
+    width: 28vw;
+    height: auto;
+    padding: 1rem;
+}
+.icons{
+    display: inline-flex;
+}
+.arrow{
+    width: 1.5vw;
+    margin-left: 8px;
+}
+
+ .grid-container2{
+    background-color: #f9ea97;
+    background-image: linear-gradient(90deg, #f6f498 0%, #d87bd4 100%);
+    height: auto;
+    margin-top: 5px;
+    display: grid;
+    grid-template-columns: 1fr; 
+    /* gap: 1rem; */
+} 
+ 
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    margin: auto;
+    padding: 3rem;
+
+}
+
+
+
+/* Media queries */
+@media screen and (min-width: 800px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+    .grid-container2 {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media screen and (max-width: 800px) {
+    nav ul {
+        flex-direction: column; 
+        padding: 1rem;
+    }
+
+    #navimg {
+        width: 2rem; 
+        margin-left: 0;
+        margin-top: 5px; 
+       
+    }
+    #mainImg {
+        width: 100%; 
+        float: right;
+    }
+
+    .grid-item {
+        padding: 1rem; 
+         text-align: center;
+
+    }
+
+    .button {
+        width: 20%; 
+        height: 8vh;
+    }
+    .box{
+        height: auto;
+        width: auto;
+        margin: auto;
+    }
+
+    .grid {
+        grid-template-columns: 1fr; 
+        padding: auto;
+        margin: auto;
+    }
+
+    .img,
+    .img2 {
+        height: auto; 
+    } 
+    .img2{
+        margin-left: auto;
+    }
+
+    .items {
+        grid-row: span 2; 
+        margin: auto;
+    }
+}
